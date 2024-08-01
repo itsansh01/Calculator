@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="calculator">
+        <input type="text" id="display" />
+        <div>
+            <button class="bt-1" id="ac" onclick=
+            "currentDisplay = currentDisplay = '';
+            document.querySelector('#display').value = currentDisplay;">AC</button>
+            <button class="bt-1" id="divi">/</button>
+            <button class="bt-1" id="percen" onclick=
+            "currentDisplay = currentDisplay + '%';
+            document.querySelector('#display').value = currentDisplay;">%</button>
+            <button class="bt-2" id="division" onclick=
+            "currentDisplay = currentDisplay + '/';
+            document.querySelector('#display').value = currentDisplay;">÷</button>
+        </div>
+
+        <div>
+            <button class="bt" id="seven" onclick=
+            "currentDisplay = currentDisplay + '7';
+            document.querySelector('#display').value = currentDisplay;">7</button>
+            <button class="bt" id="eight" onclick=
+            "currentDisplay = currentDisplay + '8';
+            document.querySelector('#display').value = currentDisplay;">8</button>
+            <button class="bt" id="nine" onclick=
+            "currentDisplay = currentDisplay + '9';
+            document.querySelector('#display').value = currentDisplay;">9</button>
+            <button class="bt-2" id="multi" onclick=
+            "currentDisplay = currentDisplay + '*';
+            document.querySelector('#display').value = currentDisplay;">×</button>
+        </div>
+
+        <div>
+            <button class="bt" id="four" onclick=
+            "currentDisplay = currentDisplay + '4';
+            document.querySelector('#display').value = currentDisplay;">4</button>
+            <button class="bt" id="five" onclick=
+            "currentDisplay = currentDisplay + '5';
+            document.querySelector('#display').value = currentDisplay;">5</button>
+            <button class="bt" id="six" onclick=
+            "currentDisplay = currentDisplay + '6';
+            document.querySelector('#display').value = currentDisplay;">6</button>
+            <button class="bt-2" id="sub" onclick=
+            "currentDisplay = currentDisplay + '-';
+            document.querySelector('#display').value = currentDisplay;">-</button>
+        </div>
+
+        <div>
+            <button class="bt" id="one" onclick=
+            "currentDisplay = currentDisplay + '1';
+            document.querySelector('#display').value = currentDisplay;">1</button>
+            <button class="bt" id="two" onclick=
+            "currentDisplay = currentDisplay + '2';
+            document.querySelector('#display').value = currentDisplay;">2</button>
+            <button class="bt" id="three" onclick=
+            "currentDisplay = currentDisplay + '3';
+            document.querySelector('#display').value = currentDisplay;">3</button>
+            <button class="bt-2" id="add" onclick=
+            "currentDisplay = currentDisplay + '+';
+            document.querySelector('#display').value = currentDisplay;">+</button>
+        </div>
+
+        <div>
+            <button class="bt" id="zero" onclick=
+            "currentDisplay = currentDisplay + '0';
+            document.querySelector('#display').value = currentDisplay;">0</button>
+            <button class="bt" id="point" onclick=
+            "currentDisplay = currentDisplay + '.';
+            document.querySelector('#display').value = currentDisplay;">.</button>
+            <button class="bt-2" id="equal" onclick=
+            "currentDisplay =  eval(currentDisplay);
+            document.querySelector('#display').value = currentDisplay;">=</button>
+        </div>
+    </div>
+
+    <script>
+        let currentDisplay = '';
+        document.querySelector('#display').value = currentDisplay;
+    </script>
+</body>
+
+</html>
